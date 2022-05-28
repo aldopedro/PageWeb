@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="middle.css">
     <title>Wx3</title>
 </head>
 <body>
@@ -23,19 +24,19 @@
                 <h3 class="header-categories" > <a href="#"> OUTLET </a></h3>
                 
                 <a href="#">
-                    <img class="header-icon-search" src="../images/search-icon.png"/>
+                    <img class="header-icon-search" src="../images/search-icon.png" alt="Icone de busca"/>
                 </a>
                 <a class="header-favorite" href="#">
-                    <img class="header-icon-favorite" src="../images/favorite-icon.png" />
+                    <img class="header-icon-favorite" src="../images/favorite-icon.png" alt="Icone de favorito"/>
                     <span class="header-number-favorite">2</span> 
                 </a>
                 <h3 class="header-logo-mobile"><a href="#">LOGO</a></h3>
                 <a class="header-account" href="#">
-                    <img class="header-icon-account" src="../images/account-icon.png" />
+                    <img class="header-icon-account" src="../images/account-icon.png" alt="Icone de conta"/>
                     <p class="header-text-account" >Login | Cadastre-se</p>
                 </a>
                 <a class="header-cart" href="#"> 
-                    <img class="header-icon-cart" src="../images/cart-icon.png"/>
+                    <img class="header-icon-cart" src="../images/cart-icon.png" alt="Icone do carrinho"/>
                     <p class="header-text-cart">R$ 0,00</p>
                     <span class="header-number-cart" >2</span>
                 </a>
@@ -58,9 +59,35 @@
                     <h3 class="header-categories-mobile" ><a class="header-categories-mobile" href="#"> OUTLET</a></h3>
                 </nav>
         </section>
-        <section class="middle-banners-slide">
-            
+        <section class="middle-banners">
+                <div class="middle-carousel">
+                        <input type="radio" name="radio" id="middle-radio1" checked>
+                        <input type="radio" name="radio" id="middle-radio2">
+                        <input type="radio" name="radio" id="middle-radio3">
+                    <div class="middle-banner-one middle-banner">
+                        <img style="width: 100%;" src="../images/banner-one.jpg" alt="Primeiro Banner">
+                    </div>
+                    <div class="middle-banner-two">
+                        <img style="width: 100%;" src="../images/banner-two.jpg" alt="Segundo Banner">
+                    </div>
+                    <div class="middle-banner-three"> 
+                        <img style="width: 100%;" src="../images/banner-three.jpg" alt="Terceiro Banner">
+                    </div>
+
+                    <div class="middle-nav-border">
+                        <div class="middle-nav-border1"></div>
+                        <div class="middle-nav-border2"></div>
+                        <div class="middle-nav-border3"></div>
+                    </div>
+
+                    <div class="middle-nav-manual">
+                        <label for="middle-radio1" class="middle-manual-button-one"> </label>
+                        <label for="middle-radio2" class="middle-manual-button-two"> </label>
+                        <label for="middle-radio3" class="middle-manual-button-three"> </label>
+                    </div>
+                </div>
         </section>
         <script src="./header.js"></script>
+        <script src="./middle.js"></script>
     </body>
     </html>

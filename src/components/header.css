@@ -262,14 +262,13 @@ a {
     }
 
     #header-nav {
-        opacity: 0%;
-        visibility: hidden;
+        display: none;
     }
     .menu-active {
         padding: 10px;
         opacity: 100%!important;
         visibility: visible!important;
-        display: grid;
+        display: grid!important;
         justify-content: center;
         justify-items: center;
         gap: 10px;
