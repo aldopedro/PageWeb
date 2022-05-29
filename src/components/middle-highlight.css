@@ -1,0 +1,210 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.middle-highlight-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+    font-family: "Poppins";
+    font-weight: 400;
+    font-size: 26px;
+    margin:0 0 54px 0;
+}
+.middle-highlight-showcase {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.middle-highlight-showcase-one,
+.middle-highlight-showcase-two,
+.middle-highlight-showcase-three,
+.middle-highlight-showcase-four {
+    position: relative;
+    margin-bottom: 94px;
+}
+
+.middle-highlight-showcase-info {
+    display: grid;
+    justify-content: center;
+    justify-items: center;
+}
+
+.middle-highlight-showcase-title {
+    font-family: 'Poppins';
+    font-size: 16px;
+    font-weight: 400;
+    color: #5d5d5d;
+}
+
+.middle-highlight-showcase-ref {
+    font-family: 'Poppins';
+    font-size: 12px;
+    font-weight: 400;
+    color: #5d5d5d;
+    margin-bottom: 20px;
+}
+.middle-highlight-showcase-price {
+    font-family: 'Poppins';
+    font-size: 16px;
+    font-weight: 700;
+    color: #ff5d46;
+    height: 22px;
+}
+
+.middle-highlight-showcase-payment {
+    font-family: 'Poppins';
+    font-size: 10px;
+    font-weight: 700;
+    color: #ff5d46;
+}
+
+.middle-highlight-showcase-installments {
+    font-family: 'Poppins';
+    font-weight: 400;
+    font-size: 10px;
+}
+
+.middle-highlight-showcase-fav-eye {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    background-color: #5d5d5d;
+    border-radius: 20px;
+    padding:6px 10px;
+    position: absolute;
+    top: 69%;
+    left: calc(25% - 10px);
+}
+
+.middle-highlight-showcase-fav,
+.middle-highlight-showcase-eye {
+    color: #FFFFFF;
+    font-size: 8px;
+    font-family: 'Poppins';
+    font-weight: 400;
+    cursor: pointer;
+}
+.middle-highlight-showcase-fav {
+    margin:0 20px 0 0;
+}
+.middle-highlight-showcase-eye  {
+    margin: 0 10px 0 0;
+}
+.middle-highlight-showcase-bar {
+    position: absolute;
+    height: 26px;
+    color: #d8baaf;
+    left: 90px;
+    z-index: 1;
+    border-right:1px solid #d8baaf;
+}
+
+.middle-highlight-showcase-banner {
+    cursor: pointer;
+}
+.middle-highlight-showcase-banner:hover {
+    opacity: 80%;
+}
+
+.middle-highlight-showcase-banner:hover ~ .middle-highlight-showcase-fav-eye {
+    transition: all .2s ease-in-out;
+    opacity: 1;
+}
+
+.middle-highlight-showcase-fav-eye {
+    opacity: 0;
+}
+.middle-highlight-showcase-fav-eye:hover{
+    opacity: 1;
+}
+
+.middle-highlight-showcase-fav-img:hover ~ .middle-highlight-showcase-fav{
+    opacity: 60%;
+}
+.middle-highlight-showcase-fav-img:hover {
+    opacity: 60%;
+}
+.middle-highlight-showcase-fav:hover{
+    opacity: 60%;
+}
+.middle-highlight-showcase-eye-img:hover ~ .middle-highlight-showcase-eye{
+    opacity: 60%;
+}
+.middle-highlight-showcase-eye-img:hover {
+    opacity: 60%;
+}
+.middle-highlight-showcase-eye:hover {
+    opacity: 60%;
+}
+
+
+.middle-highlight-showcase-buy-button {
+    font-family: 'Poppins';
+    font-weight: 700;
+    font-size: 16px;
+    letter-spacing: 3px;
+    background-color: #5a5a5a;
+    color: #FFFFFF;
+    
+    width: 280px;
+    padding: 8px 0;
+    border: 0;
+    cursor: pointer;
+    margin: 10px 0 42px 0;
+}
+
+.middle-highlight-showcase-buy-button:hover,
+.middle-highlight-see-all-link:hover {
+    transition: all .2s ease-in-out;
+    opacity: 80%;
+}
+.middle-highlight-showcase-buy-button:active,
+.middle-highlight-see-all-link:active {
+    transition: none;
+    opacity: 1;
+}
+
+.middle-highlight-see-all,
+.middle-highlight-see-all-link {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+}
+.middle-highlight-see-all {
+    margin-bottom: 70px;
+}
+.middle-highlight-see-all-text {
+    font-family: 'Poppins';
+    font-weight: 400;
+    font-size: 20px;
+}
+.middle-highlight-see-all-text-border {
+    border-bottom: 2px solid #5a5a5a;
+}
+
+@media screen and (min-width: 1101px) and (max-width:1500px){
+    .middle-highlight-showcase-four {
+        display: none;
+    }
+}
+@media screen and (min-width: 751px) and (max-width:1100px){
+    .middle-highlight-showcase-three,
+    .middle-highlight-showcase-four {
+        display: none;
+    }
+}
+@media screen and (max-width:750px){
+    .middle-highlight-showcase-two,
+    .middle-highlight-showcase-three,
+    .middle-highlight-showcase-four {
+        display: none;
+    }
+    .middle-highlight-showcase-buy-button {
+        width: 240px;
+    }
+}
