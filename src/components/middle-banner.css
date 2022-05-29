@@ -5,11 +5,11 @@
 
 .middle-banners {
     overflow: hidden;
+    margin-bottom: 24px;
 }
 .middle-carousel {
     display: flex;
     width: 400%;
-    height: 950px;
     position: relative;
 }
 .middle-banner-one,

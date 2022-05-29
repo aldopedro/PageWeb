@@ -1,0 +1,225 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.middle-news-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+    font-family: "Poppins";
+    font-weight: 400;
+    font-size: 26px;
+    margin:0 0 54px 0;
+}
+.middle-news-showcase {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.middle-news-showcase-one,
+.middle-news-showcase-two,
+.middle-news-showcase-three,
+.middle-news-showcase-four {
+    position: relative;
+}
+
+.middle-news-showcase-sale {
+    font-family: 'Poppins';
+    font-size: 10px;
+    font-weight: 700;
+    color: #FFFFFF;
+    padding:0 8px;
+    background-color: #666666;
+    border-radius: 2px;
+
+    position: absolute;
+    top: 12px;
+    left: 18px;
+}
+
+.middle-news-showcase-info {
+    display: grid;
+    justify-content: center;
+    justify-items: center;
+}
+
+.middle-news-showcase-title {
+    font-family: 'Poppins';
+    font-size: 16px;
+    font-weight: 400;
+    color: #5d5d5d;
+}
+
+.middle-news-showcase-ref {
+    font-family: 'Poppins';
+    font-size: 12px;
+    font-weight: 400;
+    color: #5d5d5d;
+    margin-bottom: 20px;
+}
+.middle-news-showcase-price {
+    font-family: 'Poppins';
+    font-size: 16px;
+    font-weight: 700;
+    color: #ff5d46;
+    height: 22px;
+}
+
+.middle-news-showcase-payment {
+    font-family: 'Poppins';
+    font-size: 10px;
+    font-weight: 700;
+    color: #ff5d46;
+}
+
+.middle-news-showcase-installments {
+    font-family: 'Poppins';
+    font-weight: 400;
+    font-size: 10px;
+}
+
+.middle-news-showcase-fav-eye,
+.middle-news-showcase-fav-eye-fix {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    background-color: #5d5d5d;
+    border-radius: 20px;
+    padding:6px 10px;
+    position: absolute;
+    top: 60%;
+    left: calc(25% - 10px);
+}
+
+.middle-news-showcase-fav,
+.middle-news-showcase-eye {
+    color: #FFFFFF;
+    font-size: 8px;
+    font-family: 'Poppins';
+    font-weight: 400;
+    cursor: pointer;
+}
+.middle-news-showcase-fav {
+    margin:0 20px 0 0;
+}
+.middle-news-showcase-eye  {
+    margin: 0 10px 0 0;
+}
+.middle-news-showcase-bar {
+    position: absolute;
+    height: 26px;
+    color: #d8baaf;
+    left: 90px;
+    z-index: 1;
+    border-right:1px solid #d8baaf;
+}
+
+.middle-news-showcase-banner {
+    cursor: pointer;
+}
+.middle-news-showcase-banner:hover {
+    opacity: 80%;
+}
+
+.middle-news-showcase-banner:hover ~ .middle-news-showcase-fav-eye {
+    transition: all .2s ease-in-out;
+    opacity: 1;
+}
+
+.middle-news-showcase-fav-eye {
+    opacity: 0;
+}
+.middle-news-showcase-fav-eye:hover{
+    opacity: 1;
+}
+
+.middle-news-showcase-fav-img:hover ~ .middle-news-showcase-fav{
+    opacity: 60%;
+}
+.middle-news-showcase-fav-img:hover {
+    opacity: 60%;
+}
+.middle-news-showcase-fav:hover{
+    opacity: 60%;
+}
+.middle-news-showcase-eye-img:hover ~ .middle-news-showcase-eye{
+    opacity: 60%;
+}
+.middle-news-showcase-eye-img:hover {
+    opacity: 60%;
+}
+.middle-news-showcase-eye:hover {
+    opacity: 60%;
+}
+
+
+.middle-news-showcase-buy-button {
+    font-family: 'Poppins';
+    font-weight: 700;
+    font-size: 16px;
+    letter-spacing: 3px;
+    background-color: #5a5a5a;
+    color: #FFFFFF;
+    
+    width: 280px;
+    padding: 8px 0;
+    border: 0;
+    cursor: pointer;
+    margin: 10px 0 42px 0;
+}
+
+.middle-news-showcase-buy-button:hover,
+.middle-news-see-all-link:hover {
+    transition: all .2s ease-in-out;
+    opacity: 80%;
+}
+.middle-news-showcase-buy-button:active,
+.middle-news-see-all-link:active {
+    transition: none;
+    opacity: 1;
+}
+
+.middle-news-see-all,
+.middle-news-see-all-link {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+}
+.middle-news-see-all {
+    margin-bottom: 70px;
+}
+.middle-news-see-all-text {
+    font-family: 'Poppins';
+    font-weight: 400;
+    font-size: 20px;
+}
+.middle-news-see-all-text-border {
+    border-bottom: 2px solid #5a5a5a;
+}
+
+@media screen and (min-width: 1101px) and (max-width:1500px){
+    .middle-news-showcase-four {
+        display: none;
+    }
+}
+@media screen and (min-width: 751px) and (max-width:1100px){
+    .middle-news-showcase-three,
+    .middle-news-showcase-four {
+        display: none;
+    }
+}
+@media screen and (max-width:750px){
+    .middle-news-showcase-two,
+    .middle-news-showcase-three,
+    .middle-news-showcase-four {
+        display: none;
+    }
+    .middle-news-showcase-sale {
+        left: 30px;
+
+    }
+}

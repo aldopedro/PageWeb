@@ -57,7 +57,7 @@ a {
     position: absolute;
     width: 8px;
     border-radius: 10px;
-    background-color: #666666;
+    background-color: #5a5a5a;
     padding: 0px 6px;
 }
 .header-number-favorite {
@@ -271,12 +271,15 @@ a {
         display: grid!important;
         justify-content: center;
         justify-items: center;
-        gap: 10px;
-        background-color: #000000;
+        gap: 20px;
+        background-color: #0e0e0e;
+        border-bottom: 1px solid #ffffff;
     }
 
     .header-categories-mobile {
         font-family: 'Poppins';
+        font-size: 12px;
+        border-bottom: 1px solid #ffffff;
         color: #FFFFFF;
     }
 }
