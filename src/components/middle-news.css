@@ -220,6 +220,8 @@
     }
     .middle-news-showcase-sale {
         left: 30px;
-
+    }
+    .middle-news-showcase-buy-button {
+        width: 240px;
     }
 }

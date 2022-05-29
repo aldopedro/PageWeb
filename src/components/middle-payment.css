@@ -1,0 +1,40 @@
+.main-middle-payment {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #000000;
+    margin-bottom: 74px;
+}
+.middle-payment {
+    display: flex;
+    gap: 26px;
+}
+.middle-payment-text {
+    font-family: 'Poppins';
+    color: #FFFFFF;
+    text-align: center;
+    margin-top: 44px;
+}
+.middle-payment-column {
+    display: grid;
+    align-items: center;
+    justify-items:center;
+    justify-content: center;
+    width: 330px;
+    padding: 32px 0;
+}
+
+@media screen and (max-width:749px){
+    .middle-payment {
+        display: grid;
+    } 
+    .middle-payment-column {
+        width: 240px;
+    }
+}
+@media screen and (min-width:750px) and (max-width:1500px){
+    .middle-payment {
+        display: grid;
+        grid-template-columns: repeat(2, max-content);
+    } 
+}
