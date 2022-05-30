@@ -3,7 +3,7 @@
     padding: 0;
 }
 
-.middle-highlight-title {
+.middle-outlet-title {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -14,42 +14,42 @@
     font-size: 26px;
     margin:0 0 54px 0;
 }
-.middle-highlight-showcase {
+.middle-outlet-showcase {
     display: flex;
     justify-content: center;
     gap: 30px;
 }
 
-.middle-highlight-showcase-one,
-.middle-highlight-showcase-two,
-.middle-highlight-showcase-three,
-.middle-highlight-showcase-four {
+.middle-outlet-showcase-one,
+.middle-outlet-showcase-two,
+.middle-outlet-showcase-three,
+.middle-outlet-showcase-four {
     position: relative;
     margin-bottom: 94px;
 }
 
-.middle-highlight-showcase-info {
+.middle-outlet-showcase-info {
     display: grid;
     justify-content: center;
     justify-items: center;
     cursor:default;
 }
 
-.middle-highlight-showcase-title {
+.middle-outlet-showcase-title {
     font-family: 'Poppins';
     font-size: 16px;
     font-weight: 400;
     color: #5d5d5d;
 }
 
-.middle-highlight-showcase-ref {
+.middle-outlet-showcase-ref {
     font-family: 'Poppins';
     font-size: 12px;
     font-weight: 400;
     color: #5d5d5d;
     margin-bottom: 20px;
 }
-.middle-highlight-showcase-price {
+.middle-outlet-showcase-price {
     font-family: 'Poppins';
     font-size: 16px;
     font-weight: 700;
@@ -57,20 +57,20 @@
     height: 22px;
 }
 
-.middle-highlight-showcase-payment {
+.middle-outlet-showcase-payment {
     font-family: 'Poppins';
     font-size: 10px;
     font-weight: 700;
     color: #ff5d46;
 }
 
-.middle-highlight-showcase-installments {
+.middle-outlet-showcase-installments {
     font-family: 'Poppins';
     font-weight: 400;
     font-size: 10px;
 }
 
-.middle-highlight-showcase-fav-eye {
+.middle-outlet-showcase-fav-eye {
     display: flex;
     align-items: center;
     gap: 6px;
@@ -82,21 +82,21 @@
     left: 25%;
 }
 
-.middle-highlight-showcase-fav,
-.middle-highlight-showcase-eye {
+.middle-outlet-showcase-fav,
+.middle-outlet-showcase-eye {
     color: #FFFFFF;
     font-size: 8px;
     font-family: 'Poppins';
     font-weight: 400;
     cursor: pointer;
 }
-.middle-highlight-showcase-fav {
+.middle-outlet-showcase-fav {
     margin:0 20px 0 0;
 }
-.middle-highlight-showcase-eye  {
+.middle-outlet-showcase-eye  {
     margin: 0 10px 0 0;
 }
-.middle-highlight-showcase-bar {
+.middle-outlet-showcase-bar {
     position: absolute;
     height: 26px;
     color: #d8baaf;
@@ -105,46 +105,46 @@
     border-right:1px solid #d8baaf;
 }
 
-.middle-highlight-showcase-banner {
+.middle-outlet-showcase-banner {
     cursor: pointer;
 }
-.middle-highlight-showcase-banner:hover {
+.middle-outlet-showcase-banner:hover {
     opacity: 80%;
 }
 
-.middle-highlight-showcase-banner:hover ~ .middle-highlight-showcase-fav-eye {
+.middle-outlet-showcase-banner:hover ~ .middle-outlet-showcase-fav-eye {
     transition: all .2s ease-in-out;
     opacity: 1;
 }
 
-.middle-highlight-showcase-fav-eye {
+.middle-outlet-showcase-fav-eye {
     opacity: 0;
 }
-.middle-highlight-showcase-fav-eye:hover{
+.middle-outlet-showcase-fav-eye:hover{
     opacity: 1;
 }
 
-.middle-highlight-showcase-fav-img:hover ~ .middle-highlight-showcase-fav{
+.middle-outlet-showcase-fav-img:hover ~ .middle-outlet-showcase-fav{
     opacity: 60%;
 }
-.middle-highlight-showcase-fav-img:hover {
+.middle-outlet-showcase-fav-img:hover {
     opacity: 60%;
 }
-.middle-highlight-showcase-fav:hover{
+.middle-outlet-showcase-fav:hover{
     opacity: 60%;
 }
-.middle-highlight-showcase-eye-img:hover ~ .middle-highlight-showcase-eye{
+.middle-outlet-showcase-eye-img:hover ~ .middle-outlet-showcase-eye{
     opacity: 60%;
 }
-.middle-highlight-showcase-eye-img:hover {
+.middle-outlet-showcase-eye-img:hover {
     opacity: 60%;
 }
-.middle-highlight-showcase-eye:hover {
+.middle-outlet-showcase-eye:hover {
     opacity: 60%;
 }
 
 
-.middle-highlight-showcase-buy-button {
+.middle-outlet-showcase-buy-button {
     font-family: 'Poppins';
     font-weight: 700;
     font-size: 16px;
@@ -159,65 +159,65 @@
     margin: 10px 0 42px 0;
 }
 
-.middle-highlight-showcase-buy-button:hover,
-.middle-highlight-see-all-link:hover {
+.middle-outlet-showcase-buy-button:hover,
+.middle-outlet-see-all-link:hover {
     transition: all .2s ease-in-out;
     opacity: 80%;
 }
-.middle-highlight-showcase-buy-button:active,
-.middle-highlight-see-all-link:active {
+.middle-outlet-showcase-buy-button:active,
+.middle-outlet-see-all-link:active {
     transition: none;
     opacity: 1;
 }
 
-.middle-highlight-see-all,
-.middle-highlight-see-all-link {
+.middle-outlet-see-all,
+.middle-outlet-see-all-link {
     display: flex;
     justify-content: center;
     gap: 8px;
 }
-.middle-highlight-see-all {
+.middle-outlet-see-all {
     margin-bottom: 70px;
 }
-.middle-highlight-see-all-text {
+.middle-outlet-see-all-text {
     font-family: 'Poppins';
     font-weight: 400;
     font-size: 20px;
 }
-.middle-highlight-see-all-text-border {
-    border-bottom: 2px solid #5a5a5a;
+.middle-outlet-see-all-text-border {
+    border-bottom: 2px solid #9e7566;
 }
 
 @media screen and (min-width: 1101px) and (max-width:1500px){
-    .middle-highlight-showcase-four {
+    .middle-outlet-showcase-four {
         display: none;
     }
 }
 @media screen and (min-width: 751px) and (max-width:1100px){
-    .middle-highlight-showcase-three,
-    .middle-highlight-showcase-four {
+    .middle-outlet-showcase-three,
+    .middle-outlet-showcase-four {
         display: none;
     }
 }
 @media screen and (max-width:750px) {
-    .middle-highlight-showcase-two,
-    .middle-highlight-showcase-three,
-    .middle-highlight-showcase-four {
+    .middle-outlet-showcase-two,
+    .middle-outlet-showcase-three,
+    .middle-outlet-showcase-four {
         display: none;
     }
-    .middle-highlight-showcase,
-    .middle-highlight-showcase-one {
+    .middle-outlet-showcase,
+    .middle-outlet-showcase-one {
         display: grid;
         justify-items: center;
         width: 100%;
     }
-    .middle-highlight-showcase-banner {
+    .middle-outlet-showcase-banner {
         width: 90%;
     }
-    .middle-highlight-showcase-buy-button {
+    .middle-outlet-showcase-buy-button {
         width: 240px;
     }
-    .middle-highlight-showcase-fav-eye{
+    .middle-outlet-showcase-fav-eye{
         top: 65%;
     }
 }

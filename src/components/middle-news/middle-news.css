@@ -45,6 +45,7 @@
     display: grid;
     justify-content: center;
     justify-items: center;
+    cursor:default;
 }
 
 .middle-news-showcase-title {
