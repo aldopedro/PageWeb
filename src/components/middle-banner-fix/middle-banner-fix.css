@@ -1,0 +1,9 @@
+.middle-banner-full-fix {
+        width: 100%;
+        margin-bottom: 86px;
+}
+@media screen and (max-width: 767px) {
+    .middle-banner-full-fix {
+        width: 135%;
+    }
+}
