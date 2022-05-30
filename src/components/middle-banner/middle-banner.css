@@ -89,11 +89,16 @@
     opacity: 1;
 } 
 
-@media  screen and (max-width: 768px) {
+@media  screen and (max-width: 750px) {
     .middle-nav-manual {
         margin-top: 11%;
+        width: 18%;
     }
     .middle-nav-border {
         margin-top: calc(11% - 4px);
+        width: 18%;
+    }
+    .middle-carousel {
+        width: 600%;
     }
 }

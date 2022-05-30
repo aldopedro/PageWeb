@@ -1,0 +1,192 @@
+@font-face {
+    font-family: 'Authentic Signature';
+    src: url('Authentic-Signature.ttf') format('truetype');
+}
+
+
+.middle-blocks {
+    display: grid;
+    grid-template-columns: repeat(2, max-content);
+    justify-content: center;
+    background-color: #000000;
+    padding: 80px 0;
+    gap: 30px;
+}
+.middle-blocks-camisole {
+    display: grid;
+    justify-items: flex-start;
+    align-items: center;
+    align-content: flex-end;
+    background-image: radial-gradient(1000px 1100px at top, #646464,#1d1d1d88);
+    width: 750px;
+    height: 1052px;
+}
+.middle-blocks-night,
+.middle-blocks-bra {
+    display: grid;
+    justify-items: flex-start;
+    align-items: center;
+    align-content: flex-end;
+    background-image: radial-gradient(circle at top, #646464,#1d1d1d88);
+    width: 686px;
+    height: 504px;
+}
+.middle-blocks-night {
+    margin-bottom: 46px;
+}
+
+.middle-blocks-info {
+    margin-left: 30px;
+}
+
+.middle-blocks-info-night {
+    margin-left: 58px;
+}
+.middle-blocks-title {
+    font-family: 'Authentic';
+    font-weight: 400;
+    font-size: 164px;
+    color: #FFFFFF;
+}
+.middle-blocks-text {
+    font-family: 'Poppins';
+    font-weight: 400;
+    font-size: 26px;
+    color: #FFFFFF;
+    margin: 10px 0 16px 0;
+}
+
+.middle-blocks-button-camisole,
+.middle-blocks-button-night,
+.middle-blocks-button-bra {
+    font-family: 'Poppins';
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: 3px;
+    color: #FFFFFF;
+    width: 210px;
+    padding: 8px 0;
+    background-color: transparent;
+    margin-bottom: 32px;
+    border: 1px solid #FFFFFF;
+    cursor: pointer;
+}
+
+.middle-blocks-button-camisole:hover,
+.middle-blocks-button-night:hover,
+.middle-blocks-button-bra:hover {
+    transition: all .2s ease-in-out;
+    background-color: #ffffffaf;
+}
+.middle-blocks-button-camisole:active,
+.middle-blocks-button-night:active,
+.middle-blocks-button-bra:active {
+    transition: none;
+    background-color: transparent;
+}
+
+@media screen and (min-width: 551px) and (max-width:1600px) {
+    .middle-blocks {
+        justify-items: center;
+        grid-template-columns: repeat(1,1fr)
+    }
+
+    .middle-blocks-info,
+    .middle-blocks-info-night {
+        margin-left: 0;
+        display: grid;
+        justify-items: center;
+    }
+
+    .middle-blocks-camisole {
+        background-image: radial-gradient(circle at top, #646464,#1d1d1d88);
+    }
+
+    .middle-blocks-camisole,
+    .middle-blocks-night,
+    .middle-blocks-bra {
+        width: 90%;
+        max-height: 220px;
+        justify-content: center;
+        align-content: center;
+    }
+    .middle-blocks-night-and-bra {
+        display: grid;
+        justify-items: center;
+        width: 100%;
+    }
+
+    .middle-blocks-title {
+        white-space: nowrap;
+        font-size: 100px;
+    }
+    .middle-blocks-text {
+        font-size: 16px;
+        margin:0;
+    }
+    .middle-block-broken {
+        display: none;
+    }
+    .middle-blocks-button-camisole,
+    .middle-blocks-button-night,
+    .middle-blocks-button-bra {
+        margin: 14px 0;
+        font-size: 16px;
+    }
+    .middle-blocks-night {
+        margin-bottom: 30px;
+    }
+}
+@media screen and (max-width:550px){
+    .middle-blocks {
+        justify-items: center;
+        grid-template-columns: repeat(1,1fr)
+    }
+
+    .middle-blocks-info,
+    .middle-blocks-info-night {
+        margin-left: 0;
+        display: grid;
+        justify-items: center;
+    }
+
+    .middle-blocks-camisole {
+        background-image: radial-gradient(circle at top, #646464,#1d1d1d88);
+    }
+
+    .middle-blocks-camisole,
+    .middle-blocks-night,
+    .middle-blocks-bra {
+        width: 90%;
+        max-height: 220px;
+        justify-content: center;
+        align-content: center;
+    }
+    .middle-blocks-night-and-bra {
+        display: grid;
+        justify-items: center;
+        width: 100%;
+    }
+
+    .middle-blocks-title {
+        white-space: nowrap;
+        font-size: 70px;
+    }
+    .middle-blocks-text {
+        font-size: 12px;
+        margin:0;
+    }
+    .middle-block-broken {
+        display: none;
+    }
+    .middle-blocks-button-camisole,
+    .middle-blocks-button-night,
+    .middle-blocks-button-bra {
+        margin: 14px 0;
+        font-size: 14px;
+        width: 80%;
+    }
+    .middle-blocks-night {
+        margin-bottom: 30px;
+    }
+}   

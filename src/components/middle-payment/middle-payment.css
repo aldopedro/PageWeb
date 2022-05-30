@@ -24,7 +24,7 @@
     padding: 32px 0;
 }
 
-@media screen and (max-width:749px){
+@media screen and (max-width:750px){
     .middle-payment {
         display: grid;
     } 
@@ -32,7 +32,7 @@
         width: 240px;
     }
 }
-@media screen and (min-width:750px) and (max-width:1500px){
+@media screen and (min-width:751px) and (max-width:1500px){
     .middle-payment {
         display: grid;
         grid-template-columns: repeat(2, max-content);

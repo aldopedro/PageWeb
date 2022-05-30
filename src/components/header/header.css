@@ -126,7 +126,7 @@ a {
     opacity: 60%;
 }
 
-@media screen and (min-width: 1351px) and (max-width:1700px) {
+@media screen and (min-width: 1351px) and (max-width:1600px) {
     .header-logo-mobile,
     .main-header-button-mobile,
     .header-categories-mobile {
@@ -373,12 +373,12 @@ a {
         justify-items: center;
         gap: 20px;
         background-color: #0e0e0e;
+        grid-template-columns: repeat(2,1fr);
     }
 
     .header-categories-mobile {
         font-family: 'Poppins';
         font-size: 12px;
-        border-bottom: 1px solid #ffffff;
         color: #FFFFFF;
     }
 }
