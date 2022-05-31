@@ -50,7 +50,6 @@
     color: #FFFFFF;
 }
 .middle-blocks-text {
-    font-family: 'Poppins';
     font-weight: 400;
     font-size: 26px;
     color: #FFFFFF;
@@ -60,7 +59,6 @@
 .middle-blocks-button-camisole,
 .middle-blocks-button-night,
 .middle-blocks-button-bra {
-    font-family: 'Poppins';
     font-size: 18px;
     font-weight: 700;
     letter-spacing: 3px;

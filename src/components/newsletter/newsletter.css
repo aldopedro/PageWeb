@@ -1,0 +1,190 @@
+.newsletter {
+    background-color: #5a5a5a;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 88px 0 170px 0;
+}
+.newsletter-logo {
+    font-family: 'Poppins';
+    font-size: 56px;
+    letter-spacing: 1px;
+}
+.newsletter-promo {
+    font-size: 18px;
+    color: #FFFFFF;
+}
+.newsletter-name,
+.newsletter-email {
+    border: 0;
+    outline: none;
+    width: 238px;
+    color: #000000;
+    padding: 10px 10px;
+
+}
+.newsletter-name::placeholder,
+.newsletter-email::placeholder {
+    color: #000000;
+}
+.newsletter-submit {
+    font-size: 14px;
+    color: #FFFFFF;
+    padding: 10px 32px;
+    border: none;
+    background-color: #000000;
+    cursor: pointer;
+}
+.newsletter-submit:hover {
+    transition: all .2s ease-in;
+    opacity: 80%;
+}
+.newsletter-submit:active {
+    transition: none;
+    opacity: 100%;
+}
+.newsletter-bottom {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: -136px 0 42px 0;
+}
+.newsletter-bottom-left {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #5a5a5a;
+    width: 860px;
+    height: 246px;
+    background-image: url(../../images/banner-loja.jpg);
+}
+.newsletter-bottom-left-title {
+    font-size: 56px;
+}
+
+.newsletter-bottom-right {
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    width: 510px;
+    height: 246px;
+    background-image: url(../../images/banner-whatsapp.png);
+}
+
+.newsletter-bottom-right-title {
+    font-family: 'Authentic';
+    font-weight: 400;
+    font-size: 74px;
+    color: #FFFFFF;
+}
+.newsletter-bottom-right-text strong {
+    color: #FFFFFF;
+}
+.newsletter-bottom-right-text {
+    color: #FFFFFF;
+}
+
+.newsletter-bottom-left,
+.newsletter-bottom-right {
+    border-top: 26px solid #FFFFFF;
+    border-left:26px solid #FFFFFF;
+}
+.newsletter-bottom-right {
+    border-right:26px solid #FFFFFF;
+}
+
+@media screen and (min-width:550px) and (max-width:1350px){
+    .newsletter {
+        justify-content: center;
+        flex-direction: column;
+    }
+    .newsletter-promo {
+        text-align: center;
+        font-size: 12px;
+    }
+    .newsletter-bottom-right-broken {
+        display: none;
+    }
+    .newsletter-name,
+    .newsletter-email {
+        margin-top: 10px;
+        width: 60%;
+        padding: 10px 0 10px 10px;
+        max-width: 396px;
+    }
+
+    .newsletter-submit {
+        margin-top: 10px;
+        width: calc(60% + 10px);
+        max-width: 406px;
+    }
+    .newsletter-bottom {
+        overflow: hidden;
+        margin:0 10px 42px 10px;
+        gap: 10px;
+        background-color: #FFFFFF;
+    }
+    .newsletter-bottom-left-title {
+        font-size: 26px;
+    }
+
+    .newsletter-bottom-left,
+    .newsletter-bottom-right {
+        border-top: 20px solid #FFFFFF;
+        border-left: none;
+        border-right: none;
+        width: 90%;
+    }
+    .newsletter-bottom-right-title {
+        font-size: 48px;
+    }
+    .newsletter-form {
+        width:100%;
+        display: grid;
+        justify-items: center;
+    }
+}
+
+@media screen and (max-width:550px) {
+    .newsletter {
+        justify-content: center;
+        flex-direction: column;
+    }
+    .newsletter-promo {
+        text-align: center;
+        font-size: 12px;
+    }
+    .newsletter-bottom-right-broken {
+        display: none;
+    }
+    .newsletter-name,
+    .newsletter-email {
+        display: flex;
+        margin-top: 10px;
+        width: 200px;
+    }
+
+    .newsletter-submit {
+        margin-top: 10px;
+        width: 220px;
+    }
+    .newsletter-bottom {
+        flex-direction: column;
+        overflow: hidden;
+        margin: 0 0 42px 0;
+    }
+    .newsletter-bottom-left-title {
+        font-size: 26px;
+    }
+
+    .newsletter-bottom-left,
+    .newsletter-bottom-right {
+        border-top: 20px solid #FFFFFF;
+        border-left: none;
+        border-right: none;
+        width: 90%;
+    }
+    .newsletter-bottom-right-title {
+        font-size: 48px;
+    }
+}

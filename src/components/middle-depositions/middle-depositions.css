@@ -13,7 +13,6 @@
 
 
 .middle-depositions-title {
-    font-family: 'Poppins';
     font-size: 50px;
     font-weight: 500;
     color: #FFFFFF;
@@ -63,7 +62,6 @@
 }
 .middle-depositions-info-name,
 .middle-despositions-info-city {
-    font-family: 'Poppins';
     font-size: 12px;
 }
 .middle-depositions-info-name {
@@ -95,7 +93,6 @@
 .middle-despositions-info-description {
     text-align: center;
     width: 264px;
-    font-family: 'Poppins';
     font-size: 14px;
 }
 
