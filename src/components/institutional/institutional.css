@@ -1,0 +1,198 @@
+.institutional-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 26px;
+    margin-bottom: 56px;
+}
+
+.institutional-social-media-facebook,
+.institutional-social-media-instagram,
+.institutional-social-media-youtube {
+    width: 34px;
+    height: 34px;
+}
+
+.institutional-social-media-facebook:hover {
+    transition: all .2s ease-in-out;
+    background-color: #6191f8;
+    opacity: 80%;
+    border-radius: 30px;
+}
+.institutional-social-media-instagram:hover {
+    transition: all .2s ease-in-out;
+    background-color: #ba52ff;
+    border-radius: 30px;
+}
+.institutional-social-media-youtube:hover {
+    transition: all .2s ease-in-out;
+    background-color: #ff3d36;
+    border-radius: 30px;
+}
+
+.institutional {
+    display: flex;
+    justify-content: space-around;
+}
+.institutional-column {
+    position: relative
+}
+
+#institutional-button-one,
+#institutional-button-two,
+#institutional-button-three,
+#institutional-button-four,
+#institutional-button-five {
+    font-size: 18px;
+    font-weight: 700;
+    color: #5a5a5a;
+    font-weight: 700;
+    color: #5a5a5a;
+
+    background-color: #FFFFFF;
+    border: none;
+}
+
+.institutional-title-one,
+.institutional-title-two,
+.institutional-title-three,
+.institutional-title-four,
+.institutional-title-five {
+    font-size: 18px;
+    font-weight: 700;
+    color: #5a5a5a;
+}
+.institutional-title-one,
+.institutional-title-two {
+    margin-bottom: 40px;
+}
+
+.institutional-title-three,
+.institutional-title-five {
+    margin-bottom: 26px;
+}
+
+.institutional-text,
+.institutional-link {
+    font-size: 14px;
+    font-weight: 400;
+    color: #5a5a5a;
+    margin: 8px 0;
+}
+
+
+.institutional-link:hover {
+    transition: all .2s ease-in-out;
+    color: #000000;
+}
+
+.institutional-icon-ebit {
+    position: relative;
+    z-index: 1;
+}
+.institutional-icon-ssl {
+    position: absolute;
+    top: 28px;
+    left: -20px;
+}
+#institutional-button-mobile1,
+#institutional-button-mobile2,
+#institutional-button-mobile3,
+#institutional-button-mobile4,
+#institutional-button-mobile5,
+#institutional-button-mobile6,
+#institutional-button-mobile7,
+#institutional-button-mobile8,
+#institutional-button-mobile9,
+#institutional-button-mobile10 {
+    display: none;
+}
+
+@media screen and (max-width:1350px) {
+    #institutional-button-mobile1,
+    #institutional-button-mobile2,
+    #institutional-button-mobile3,
+    #institutional-button-mobile4,
+    #institutional-button-mobile5,
+    #institutional-button-mobile6,
+    #institutional-button-mobile7,
+    #institutional-button-mobile8,
+    #institutional-button-mobile9,
+    #institutional-button-mobile10 {
+        display: block
+}
+    .institutional-button-icon {
+        position: absolute;
+        width: 10px;
+        top: 16px;
+        left: 90%;
+        background: transparent;
+        border: none;
+        cursor: pointer;
+        border-top:2px solid #FFFFFF;
+        z-index: 1;
+    }
+
+    #institutional-button-mobile2,
+    #institutional-button-mobile4,
+    #institutional-button-mobile6, 
+    #institutional-button-mobile8, 
+    #institutional-button-mobile10 {
+        position: absolute;
+        top: 16px;
+        left: 90%;
+        width: 10px;
+        background: transparent;
+        border: none;
+        border-top: 2px solid #FFFFFF;
+        transition: all 0.2s ease-in-out;
+        transform: rotateZ(90deg);
+    }
+
+    .menu-desactive,
+    .menu-desactive-two,
+    .menu-desactive-three,
+    .menu-desactive-four,
+    .menu-desactive-five {
+        transform: rotateZ(0deg)!important;
+    }
+
+    #institutional-button-one,
+    #institutional-button-two,
+    #institutional-button-three,
+    #institutional-button-four,
+    #institutional-button-five {
+        width: 100%;
+        background-color: #000000;
+        color: #FFFFFF;
+        cursor: pointer;
+    }
+    .institutional {
+        flex-direction: column;
+        overflow: hidden;
+    }
+
+    .institutional-title-one,
+    .institutional-title-two,
+    .institutional-title-three,
+    .institutional-title-four, 
+    .institutional-title-five {
+        margin:4px 0;
+    }
+    .active-one,
+    .active-two,
+    .active-three,
+    .active-four, 
+    .active-five {
+        display: block!important;
+    }
+    #institutional-column-one,
+    #institutional-column-two,
+    #institutional-payment-icon,
+    #institutional-correio-icon,
+    #institutional-column-five {
+        margin-left: 20px;
+        display: none;
+    }
+
+}
