@@ -1,3 +1,8 @@
+.middle-highlight {
+    position: relative;
+    overflow: hidden;
+}
+
 .middle-highlight-title {
     display: flex;
     align-items: center;
@@ -9,10 +14,123 @@
     font-size: 26px;
     margin:0 0 54px 0;
 }
-.middle-highlight-showcase {
+#middle-highlight-showcase1,
+#middle-highlight-showcase2,
+#middle-highlight-showcase3 {
     display: flex;
     justify-content: center;
     gap: 30px;
+    transition: all 1s ease-in-out
+}
+#middle-highlight-showcase1 {
+    margin-top: 30px;
+}
+#middle-highlight-product1,
+#middle-highlight-product2, 
+#middle-highlight-product3 {
+    display: none;
+}
+
+.middle-highlight-balls,
+.middle-highlight-effect {
+    display: flex;
+    justify-content:flex-end;
+    gap: 20px;
+    margin-right: 260px;
+    margin-bottom: 20px;
+}
+.middle-highlight-effect {
+    margin-top: -38px;
+    margin-right: 297px;
+}
+
+#middle-highlight-showcase2 {
+    margin-top: -33%;
+}
+#middle-highlight-showcase3 {
+    margin-top: -33%;
+}
+
+
+.middle-highlight-balls-effect1,
+.middle-highlight-balls-effect2, 
+.middle-highlight-balls-effect3 {
+    background-color: #5a5a5a;
+    width: 18px;
+    height: 18px;
+    border-radius: 20px;
+    opacity: 0;
+}
+
+#middle-highlight-product1:checked ~ .middle-highlight-effect .middle-highlight-balls-effect1 {
+    opacity: 1;
+}
+#middle-highlight-product2:checked ~ .middle-highlight-effect .middle-highlight-balls-effect2 {
+    opacity: 1;
+}
+#middle-highlight-product3:checked ~ .middle-highlight-effect .middle-highlight-balls-effect3 {
+    opacity: 1;
+}
+
+#middle-highlight-product1:checked ~ #middle-highlight-showcase1 {
+    transform: translateX(0);
+}
+#middle-highlight-product1:checked ~ #middle-highlight-showcase2 {
+    transform: translateX(2000px);
+}
+#middle-highlight-product1:checked ~ #middle-highlight-showcase3 {
+    transform: translateX(2000px);
+}
+#middle-highlight-product2:checked ~ #middle-highlight-showcase2 {
+    transform: translateX(0);
+}
+#middle-highlight-product2:checked ~ #middle-highlight-showcase1 {
+    transform: translateX(2000px);
+}
+#middle-highlight-product2:checked ~ #middle-highlight-showcase3 {
+    transform: translateX(2000px);
+}
+#middle-highlight-product3:checked ~ #middle-highlight-showcase3 {
+    transform: translateX(0);
+}
+#middle-highlight-product3:checked ~ #middle-highlight-showcase1 {
+    transform: translateX(2000px);
+}
+#middle-highlight-product3:checked ~ #middle-highlight-showcase2 {
+    transform: translateX(2000px);
+}
+
+
+.middle-highlight-balls1,
+.middle-highlight-balls2,
+.middle-highlight-balls3 {
+    padding: 7px;
+    border: 2px solid #5a5a5a;
+    border-radius: 20px;
+    cursor: pointer;
+    z-index: 1;
+}
+
+#middle-highlight-button-back,
+#middle-highlight-button-next {
+    border:0; 
+    background-color:#FFFFFF; 
+    cursor: pointer;
+}
+
+.middle-highlight-arrow-back {
+    border-top: 1px solid #5a5a5a;
+    border-left: 1px solid #5a5a5a;
+    width: 16px;
+    height: 16px;
+    transform: rotateZ(-45deg);
+}
+.middle-highlight-arrow-next {
+    border-top: 1px solid #5a5a5a;
+    border-right: 1px solid #5a5a5a;
+    width: 16px;
+    height: 16px;
+    transform: rotateZ(45deg);
 }
 
 .middle-highlight-showcase-one,
@@ -20,7 +138,19 @@
 .middle-highlight-showcase-three,
 .middle-highlight-showcase-four {
     position: relative;
-    margin-bottom: 94px;
+}
+
+.middle-highlight-showcase-sale {
+    font-size: 10px;
+    font-weight: 700;
+    color: #FFFFFF;
+    padding:0 8px;
+    background-color: #666666;
+    border-radius: 2px;
+
+    position: absolute;
+    top: 12px;
+    left: 18px;
 }
 
 .middle-highlight-showcase-info {
@@ -60,7 +190,8 @@
     font-size: 10px;
 }
 
-.middle-highlight-showcase-fav-eye {
+.middle-highlight-showcase-fav-eye,
+.middle-highlight-showcase-fav-eye-fix {
     display: flex;
     align-items: center;
     gap: 6px;
@@ -68,7 +199,7 @@
     border-radius: 20px;
     padding:6px 10px;
     position: absolute;
-    top: 69%;
+    top: 60%;
     left: 25%;
 }
 
@@ -166,6 +297,7 @@
 }
 .middle-highlight-see-all {
     margin-bottom: 70px;
+    margin-top: 280px;
 }
 .middle-highlight-see-all-text {
     font-weight: 400;
@@ -186,25 +318,73 @@
         display: none;
     }
 }
+
 @media screen and (max-width:750px) {
     .middle-highlight-showcase-two,
     .middle-highlight-showcase-three,
     .middle-highlight-showcase-four {
         display: none;
     }
-    .middle-highlight-showcase,
+    
     .middle-highlight-showcase-one {
         display: grid;
         justify-items: center;
         width: 100%;
     }
+
+    #middle-highlight-showcase2,
+    #middle-highlight-showcase3 {
+        margin-top: 30px;
+    }
+
     .middle-highlight-showcase-banner {
         width: 90%;
+        max-width: 296px;
+    }
+    .middle-highlight-showcase-sale {
+        display: none;
     }
     .middle-highlight-showcase-buy-button {
         width: 240px;
     }
-    .middle-highlight-showcase-fav-eye{
-        top: 65%;
+    .middle-highlight-showcase-fav-eye-fix {
+        display: none;
+    }
+
+    .middle-highlight-balls {
+        margin: 0;
+        justify-content: center;
+    }
+    .middle-highlight-effect {
+        margin: -18px 0 0 0;
+        justify-content: center;
+    }
+
+    #middle-highlight-product1:checked ~ #middle-highlight-showcase1 {
+        display: block;
+    }
+    #middle-highlight-product1:checked ~ #middle-highlight-showcase2 {
+        display: none;
+    }
+    #middle-highlight-product1:checked ~ #middle-highlight-showcase3 {
+        display: none;
+    }
+    #middle-highlight-product2:checked ~ #middle-highlight-showcase2 {
+        display: block;
+    }
+    #middle-highlight-product2:checked ~ #middle-highlight-showcase1 {
+        display: none;
+    }
+    #middle-highlight-product2:checked ~ #middle-highlight-showcase3 {
+        display: none;
+    }
+    #middle-highlight-product3:checked ~ #middle-highlight-showcase3 {
+        display: block;
+    }
+    #middle-highlight-product3:checked ~ #middle-highlight-showcase1 {
+        display: none;
+    }
+    #middle-highlight-product3:checked ~ #middle-highlight-showcase2 {
+        display: none;
     }
 }
