@@ -1,8 +1,3 @@
-@font-face {
-    font-family: 'Authentic Signature';
-    src: url('../../font/Authentic Signature.ttf') format('truetype');
-}
-
 .middle-blocks {
     display: grid;
     grid-template-columns: repeat(2, max-content);
