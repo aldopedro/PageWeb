@@ -1,8 +1,7 @@
 @font-face {
-    font-family: 'Authentic Signature';
-    src: url('Authentic-Signature.ttf') format('truetype');
+    font-family: 'Authentic';
+    src: url('../../font/Authentic Signature.ttf') format('truetype');
 }
-
 
 .middle-blocks {
     display: grid;
@@ -44,7 +43,7 @@
     margin-left: 58px;
 }
 .middle-blocks-title {
-    font-family: 'Authentic';
+    font-family: 'Authentic Signature';
     font-weight: 400;
     font-size: 164px;
     color: #FFFFFF;
