@@ -190,11 +190,6 @@
         flex-direction: column;
 
     }
-    .middle-depositions-info-one,
-    .middle-depositions-info-two,
-    .middle-depositions-info-three {
-        width: 90%;
-    }
     .middle-despositions-radio1,
     .middle-despositions-radio2,
     .middle-despositions-radio3,
@@ -237,5 +232,9 @@
     }
     .middle-despositions-info-text-image-one {
         left: 1%;
+    }
+    .middle-despositions-info-description,
+    .middle-despositions-info-city {
+        font-size: 10px;
     }
 }

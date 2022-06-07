@@ -20,7 +20,7 @@
     display: flex;
     justify-content: center;
     gap: 30px;
-    transition: all 1s ease-in-out
+    transition: all 1s ease-in-out;
 }
 #middle-highlight-showcase1 {
     margin-top: 30px;
@@ -44,14 +44,6 @@
     margin-right: 297px;
 }
 
-#middle-highlight-showcase2 {
-    margin-top: -33%;
-}
-#middle-highlight-showcase3 {
-    margin-top: -33%;
-}
-
-
 .middle-highlight-balls-effect1,
 .middle-highlight-balls-effect2, 
 .middle-highlight-balls-effect3 {
@@ -74,30 +66,42 @@
 
 #middle-highlight-product1:checked ~ #middle-highlight-showcase1 {
     transform: translateX(0);
+    margin-bottom: 40px;
+    display: flex;
 }
 #middle-highlight-product1:checked ~ #middle-highlight-showcase2 {
     transform: translateX(2000px);
+    position: absolute;
 }
 #middle-highlight-product1:checked ~ #middle-highlight-showcase3 {
     transform: translateX(2000px);
+    position: absolute;
 }
 #middle-highlight-product2:checked ~ #middle-highlight-showcase2 {
     transform: translateX(0);
+    margin-bottom: 40px;
+    display: flex;
 }
 #middle-highlight-product2:checked ~ #middle-highlight-showcase1 {
     transform: translateX(2000px);
+    position: absolute;
 }
 #middle-highlight-product2:checked ~ #middle-highlight-showcase3 {
     transform: translateX(2000px);
+    position: absolute;
 }
 #middle-highlight-product3:checked ~ #middle-highlight-showcase3 {
     transform: translateX(0);
+    margin-bottom: 40px;
+    display: flex;
 }
 #middle-highlight-product3:checked ~ #middle-highlight-showcase1 {
     transform: translateX(2000px);
+    position: absolute;
 }
 #middle-highlight-product3:checked ~ #middle-highlight-showcase2 {
     transform: translateX(2000px);
+    position: absolute;
 }
 
 
@@ -116,14 +120,19 @@
     border:0; 
     background-color:#FFFFFF; 
     cursor: pointer;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 16px;
+    height: 16px;
 }
-
 .middle-highlight-arrow-back {
     border-top: 1px solid #5a5a5a;
     border-left: 1px solid #5a5a5a;
     width: 16px;
     height: 16px;
     transform: rotateZ(-45deg);
+    position: relative;
 }
 .middle-highlight-arrow-next {
     border-top: 1px solid #5a5a5a;
@@ -131,6 +140,7 @@
     width: 16px;
     height: 16px;
     transform: rotateZ(45deg);
+    position: relative;
 }
 
 .middle-highlight-showcase-one,
@@ -199,7 +209,7 @@
     border-radius: 20px;
     padding:6px 10px;
     position: absolute;
-    top: 60%;
+    top: 446px;
     left: 25%;
 }
 
@@ -263,21 +273,6 @@
     opacity: 60%;
 }
 
-
-.middle-highlight-showcase-buy-button {
-    font-weight: 700;
-    font-size: 16px;
-    letter-spacing: 3px;
-    background-color: #5a5a5a;
-    color: #FFFFFF;
-    
-    width: 280px;
-    padding: 8px 0;
-    border: 0;
-    cursor: pointer;
-    margin: 10px 0 42px 0;
-}
-
 .middle-highlight-showcase-buy-button:hover,
 .middle-highlight-see-all-link:hover {
     transition: all .2s ease-in-out;
@@ -297,7 +292,6 @@
 }
 .middle-highlight-see-all {
     margin-bottom: 70px;
-    margin-top: 280px;
 }
 .middle-highlight-see-all-text {
     font-weight: 400;
@@ -311,11 +305,79 @@
     .middle-highlight-showcase-four {
         display: none;
     }
+    
+    .middle-highlight-showcase-one,
+    .middle-highlight-showcase-two {
+        display: grid;
+        justify-items: center;
+    }
+
+    #middle-highlight-showcase2,
+    #middle-highlight-showcase3 {
+        margin-top: 30px;
+    }
+
+    .middle-highlight-showcase-banner {
+        width: 90%;
+        max-width: 296px;
+    }
+    .middle-highlight-showcase-sale {
+        display: none;
+    }
+
+    .middle-highlight-showcase-fav-eye-fix,
+    .middle-highlight-showcase-fav-eye{
+        top: 360px;
+        left: 62px;
+    }
+    .middle-highlight-balls {
+        margin: 0;
+        justify-content: center;
+    }
+    .middle-highlight-effect {
+        margin: -18px 0 0 0;
+        justify-content: center;
+    }
+
 }
 @media screen and (min-width: 751px) and (max-width:1100px){
     .middle-highlight-showcase-three,
     .middle-highlight-showcase-four {
         display: none;
+    }
+    
+    .middle-highlight-showcase-one,
+    .middle-highlight-showcase-two {
+        display: grid;
+        justify-items: center;
+    }
+
+    #middle-highlight-showcase2,
+    #middle-highlight-showcase3 {
+        margin-top: 30px;
+    }
+
+    .middle-highlight-showcase-banner {
+        width: 90%;
+        max-width: 296px;
+    }
+    .middle-highlight-showcase-sale {
+        display: none;
+    }
+
+    .middle-highlight-showcase-fav-eye-fix,
+    .middle-highlight-showcase-fav-eye{
+        top: 360px;
+        left: 62px;
+    }
+
+    .middle-highlight-balls {
+        margin: 0;
+        justify-content: center;
+    }
+    .middle-highlight-effect {
+        margin: -18px 0 0 0;
+        justify-content: center;
     }
 }
 
@@ -344,9 +406,7 @@
     .middle-highlight-showcase-sale {
         display: none;
     }
-    .middle-highlight-showcase-buy-button {
-        width: 240px;
-    }
+
     .middle-highlight-showcase-fav-eye-fix {
         display: none;
     }
@@ -358,33 +418,5 @@
     .middle-highlight-effect {
         margin: -18px 0 0 0;
         justify-content: center;
-    }
-
-    #middle-highlight-product1:checked ~ #middle-highlight-showcase1 {
-        display: block;
-    }
-    #middle-highlight-product1:checked ~ #middle-highlight-showcase2 {
-        display: none;
-    }
-    #middle-highlight-product1:checked ~ #middle-highlight-showcase3 {
-        display: none;
-    }
-    #middle-highlight-product2:checked ~ #middle-highlight-showcase2 {
-        display: block;
-    }
-    #middle-highlight-product2:checked ~ #middle-highlight-showcase1 {
-        display: none;
-    }
-    #middle-highlight-product2:checked ~ #middle-highlight-showcase3 {
-        display: none;
-    }
-    #middle-highlight-product3:checked ~ #middle-highlight-showcase3 {
-        display: block;
-    }
-    #middle-highlight-product3:checked ~ #middle-highlight-showcase1 {
-        display: none;
-    }
-    #middle-highlight-product3:checked ~ #middle-highlight-showcase2 {
-        display: none;
     }
 }
