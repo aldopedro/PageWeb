@@ -200,8 +200,7 @@
     font-size: 10px;
 }
 
-.middle-highlight-showcase-fav-eye,
-.middle-highlight-showcase-fav-eye-fix {
+.middle-highlight-showcase-fav-eye {
     display: flex;
     align-items: center;
     gap: 6px;
@@ -325,7 +324,6 @@
         display: none;
     }
 
-    .middle-highlight-showcase-fav-eye-fix,
     .middle-highlight-showcase-fav-eye{
         top: 360px;
         left: 62px;
@@ -365,7 +363,6 @@
         display: none;
     }
 
-    .middle-highlight-showcase-fav-eye-fix,
     .middle-highlight-showcase-fav-eye{
         top: 360px;
         left: 62px;
@@ -406,11 +403,6 @@
     .middle-highlight-showcase-sale {
         display: none;
     }
-
-    .middle-highlight-showcase-fav-eye-fix {
-        display: none;
-    }
-
     .middle-highlight-balls {
         margin: 0;
         justify-content: center;
@@ -418,5 +410,8 @@
     .middle-highlight-effect {
         margin: -18px 0 0 0;
         justify-content: center;
+    }
+    .middle-highlight-showcase-fav-eye{
+        display: none;
     }
 }

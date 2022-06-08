@@ -47,7 +47,7 @@
 .middle-outlet-balls-effect1,
 .middle-outlet-balls-effect2, 
 .middle-outlet-balls-effect3 {
-    background-color: #5a5a5a;
+    background-color: #9e7566;
     width: 18px;
     height: 18px;
     border-radius: 20px;
@@ -109,7 +109,7 @@
 .middle-outlet-balls2,
 .middle-outlet-balls3 {
     padding: 7px;
-    border: 2px solid #5a5a5a;
+    border: 2px solid #9e7566;
     border-radius: 20px;
     cursor: pointer;
     z-index: 1;
@@ -127,16 +127,16 @@
     height: 16px;
 }
 .middle-outlet-arrow-back {
-    border-top: 1px solid #5a5a5a;
-    border-left: 1px solid #5a5a5a;
+    border-top: 1px solid #9e7566;
+    border-left: 1px solid #9e7566;
     width: 16px;
     height: 16px;
     transform: rotateZ(-45deg);
     position: relative;
 }
 .middle-outlet-arrow-next {
-    border-top: 1px solid #5a5a5a;
-    border-right: 1px solid #5a5a5a;
+    border-top: 1px solid #9e7566;
+    border-right: 1px solid #9e7566;
     width: 16px;
     height: 16px;
     transform: rotateZ(45deg);
@@ -200,8 +200,7 @@
     font-size: 10px;
 }
 
-.middle-outlet-showcase-fav-eye,
-.middle-outlet-showcase-fav-eye-fix {
+.middle-outlet-showcase-fav-eye {
     display: flex;
     align-items: center;
     gap: 6px;
@@ -297,7 +296,7 @@
     font-size: 20px;
 }
 .middle-outlet-see-all-text-border {
-    border-bottom: 2px solid #5a5a5a;
+    border-bottom: 2px solid #9e7566;
 }
 
 @media screen and (min-width: 1101px) and (max-width:1500px){
@@ -323,8 +322,6 @@
     .middle-outlet-showcase-sale {
         display: none;
     }
-
-    .middle-outlet-showcase-fav-eye-fix,
     .middle-outlet-showcase-fav-eye{
         top: 360px;
         left: 62px;
@@ -363,8 +360,6 @@
     .middle-outlet-showcase-sale {
         display: none;
     }
-
-    .middle-outlet-showcase-fav-eye-fix,
     .middle-outlet-showcase-fav-eye{
         top: 360px;
         left: 62px;
@@ -405,10 +400,6 @@
     .middle-outlet-showcase-sale {
         display: none;
     }
-    
-    .middle-outlet-showcase-fav-eye-fix {
-        display: none;
-    }
 
     .middle-outlet-balls {
         margin: 0;
@@ -417,5 +408,8 @@
     .middle-outlet-effect {
         margin: -18px 0 0 0;
         justify-content: center;
+    }
+    .middle-outlet-showcase-fav-eye{
+        display: none;
     }
 }
