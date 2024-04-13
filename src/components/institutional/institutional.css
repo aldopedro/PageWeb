@@ -110,6 +110,9 @@
 }
 
 @media screen and (max-width:1350px) {
+    .institutional {
+        margin: 0;
+    }
     #institutional-button-mobile1,
     #institutional-button-mobile2,
     #institutional-button-mobile3,
@@ -140,7 +143,7 @@
     #institutional-button-mobile8, 
     #institutional-button-mobile10 {
         position: absolute;
-        top: 16px;
+        top: 22px;
         left: 90%;
         width: 10px;
         background: transparent;
@@ -148,6 +151,13 @@
         border-top: 2px solid #FFFFFF;
         transition: all 0.2s ease-in-out;
         transform: rotateZ(90deg);
+    }
+    #institutional-button-mobile1,
+    #institutional-button-mobile3,
+    #institutional-button-mobile5,
+    #institutional-button-mobile7,
+    #institutional-button-mobile9 {
+        top: 22px;
     }
 
     .menu-desactive,
@@ -164,9 +174,10 @@
     #institutional-button-four,
     #institutional-button-five {
         width: 100%;
-        background-color: #000000;
+        background: radial-gradient(circle at top, #848484,#a0a0a087);
         color: #FFFFFF;
         cursor: pointer;
+        padding: 10px 0;
     }
     .institutional {
         flex-direction: column;
@@ -178,7 +189,7 @@
     .institutional-title-three,
     .institutional-title-four, 
     .institutional-title-five {
-        margin:4px 0;
+        margin:0;
     }
     .active-one,
     .active-two,
@@ -195,5 +206,4 @@
         margin-left: 20px;
         display: none;
     }
-
 }

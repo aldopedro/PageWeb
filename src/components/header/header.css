@@ -261,8 +261,9 @@ a {
         justify-content: center;
         justify-items: center;
         gap: 20px;
-        background-color: #0e0e0e;
+        background: radial-gradient(circle at top, #848484,#a0a0a087);
         grid-template-columns: repeat(10, max-content);
+        
     }
 
     .header-categories-mobile {
